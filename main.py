@@ -3,6 +3,9 @@ from follow_up.FollowUpQuestionGenerator import FollowUpQuestionGenerator
 from flow.FlowManager import FlowManager
 
 if __name__ == '__main__':
+    # 초기 질문 생성은 아직 안 만들었음.
+    # 그래서 나중에 자소서 분석 내용을 토대로 초기질문을 만들어야 함.
+    # 분석 내용 역시 아래 코드에도 컨텍스트로 넣어야 함.(메모리 없이 프롬프트 인자로 넣어도 될듯)
     analyzer = InterviewQuestionAnalyzer()
     generator = FollowUpQuestionGenerator()
     flow_manager = FlowManager(analyzer, generator)
